@@ -9,6 +9,14 @@ This project is built in Python 3, and all of its dependencies are accesible via
 then you need to make sure you [have pip installed](https://packaging.python.org/tutorials/installing-packages/#ensure-you-can-run-pip-from-the-command-line).
 
 ### Recommended setup
+Install the `python3-dev` and `openldap-dev` dependencies. On Fedora this looks like
+```
+sudo dnf install python-devel
+sudo dnf install openldap-devel
+```
+See [this stack overflow thread](https://stackoverflow.com/questions/21530577/fatal-error-python-h-no-such-file-or-directory) if you need examples of what this looks like for other package managers  
+
+---
 From inside your repository directory run
 ```
 python -m virtualenv venv # Sets up virtualenve in the venv directory in your working directory
